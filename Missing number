@@ -1,0 +1,12 @@
+class Solution {
+    int missingNum(int arr[]) {
+       long l = arr.length;
+       long n = ((l+1)*(l+2))/2;
+       int ans = 0;
+       for(int i:arr)
+       {
+           ans += i;
+       }
+       return (int)n-ans;
+    }
+}
